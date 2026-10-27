@@ -1,6 +1,6 @@
 # Excel Optimization Hackathon — Nutrition Planning & Vehicle Routing
 
-**DQLab Hackathon | Spreadsheet Modeling | Operations Research**
+**DQLab Hackathon | Operations Research**
 
 ## Overview
 
@@ -15,7 +15,7 @@ The project demonstrates how spreadsheet formulas, decision variables, objective
 
 ### 1. Nutrition Budget
 
-Workbook: `EXCELHACK03-PERENCANAAN-GIZI-DQLAB.xlsx`
+Workbook: `excelhack03-perencanaan-gizi-dqlab.xlsx`
 
 The `Bahan dan Menu` sheet contains five food ingredients—eggs, tempeh, chicken, spinach, and oats—with their unit prices, protein and fiber values, and minimum/maximum quantities. The model also contains budget and nutrition targets.
 
@@ -28,7 +28,7 @@ The `Bahan dan Menu` sheet contains five food ingredients—eggs, tempeh, chicke
 
 ### 2. Vehicle Routing Problem
 
-Workbook: `EXCELHACK03-PERENCANAAN-ROUTING-DQLAB.xlsx`
+Workbook: `excelhack03-perencanaan-routing-dqlab.xlsx`
 
 The workbook provides a depot, **50 customer locations**, customer demand values, and a **51 × 51 distance matrix** covering the depot and all customers.
 
@@ -53,12 +53,12 @@ The workbook provides a depot, **50 customer locations**, customer demand values
 | Formula | Role in the project |
 |---|---|
 | `INDEX` | Retrieve customer demand and distances from lookup tables / the distance matrix. |
-| `IF` | Handle route separators, depot mapping, and empty route positions. |
+| `IF/IFS` | Handle route separators, depot mapping, and empty route positions. |
 | `COUNTIF` | Identify route separators and calculate route numbering. |
 | `COUNTIFS` | Count route positions while applying multiple criteria. |
 | `SUMPRODUCT` | Aggregate nutrition totals and truck demand. |
 | `SUM` / `SUMIF` | Calculate totals and route-level summaries. |
-| `IFS` | **Optional extension:** create a readable status label for multiple validation conditions. This function is not present in the formulas saved in the supplied workbooks. Example: `=IFS(AND(E2>=B3,E3>=B4,H12<=B2),"Feasible",TRUE,"Check constraints")`. |
+
 
 ## Workflow
 
@@ -110,7 +110,7 @@ To enable Solver, go to **File → Options → Add-ins → Excel Add-ins → Go*
 
 ### A. Run the Nutrition Budget model
 
-1. Open `EXCELHACK03-PERENCANAAN-GIZI-DQLAB.xlsx` and select the `Bahan dan Menu` sheet.
+1. Open `excelhack03-perencanaan-gizi-dqlab.xlsx` and select the `Bahan dan Menu` sheet.
 2. Open **Data → Solver**.
 3. Configure the model:
    - **Set Objective:** `H12` (total cost), select **Min**.
@@ -121,7 +121,7 @@ To enable Solver, go to **File → Options → Add-ins → Excel Add-ins → Go*
 
 ### B. Run the Vehicle Routing model
 
-1. Open `EXCELHACK03-PERENCANAAN-ROUTING-DQLAB.xlsx`.
+1. Open `excelhack03-perencanaan-routing-dqlab.xlsx`.
 2. Open **Data → Solver**.
 3. Configure the model:
    - **Set Objective:** `Solution!L13` (total route distance), select **Min**.
