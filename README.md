@@ -1,6 +1,6 @@
 # Excel Optimization Hackathon — Nutrition Planning & Vehicle Routing
 
-**DQLab Hackathon | Operations Research**
+**Excel DQLab Hackathon | Operations Research**
 
 ## Overview
 
