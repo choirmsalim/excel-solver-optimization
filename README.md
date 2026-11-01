@@ -91,6 +91,7 @@ The project demonstrates how spreadsheet formulas, decision variables, objective
 - Protein **2.021 g** (target ≥ 2.000), serat **500 g** (target ≥ 500), rasio Tempe : Ayam = **20** (batas ≤ 20).
 - Biaya Rp1.910.000 berada di bawah anggaran Rp2.000.000 (selisih Rp90.000).
 - Hasil ini **sama dengan solusi optimal global** yang dihitung ulang secara independen dengan Integer Programming di Python.
+
 **Tugas 2: menu harian**
  
 | Bahan | Per hari (unit) |
@@ -131,9 +132,12 @@ The project demonstrates how spreadsheet formulas, decision variables, objective
  
 ```
 excel-solver-optimization/
-├── excel/
+├── excel-solver/
 │   ├── excelhack03-perencanaan-gizi-dqlab.xlsx
 │   └── excelhack03-perencanaan-routing-dqlab.xlsx
+├── raw-data/
+│   ├── soal-perencanaan-gizi.pdf
+│   └── soal-vehicle-routing-problem.pdf
 ├── docs/
 │   ├── soal-perencanaan-gizi.pdf
 │   └── soal-vehicle-routing-problem.pdf
