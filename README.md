@@ -200,5 +200,4 @@ Untuk mengaktifkan Solver, buka **File → Options → Add-ins → Excel Add-ins
 - [Microsoft Support: Define and solve a problem by using Solver](https://support.microsoft.com/en-us/excel/define-and-solve-a-problem-by-using-solver)
 > Soal berasal dari Hackathon Excel Oktober 2026 (DQLab x UjiKompetensi.com) dan digunakan untuk tujuan pembelajaran dan portofolio.
 
-
 > Soal berasal dari Hackathon Excel Oktober 2026 (DQLab x UjiKompetensi.com) dan digunakan untuk tujuan pembelajaran dan portofolio.
